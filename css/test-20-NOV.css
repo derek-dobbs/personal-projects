@@ -122,4 +122,22 @@ h2 {
     /*margin-bottom: auto;*/
 }
 
+.medium-box {
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    font-weight: bold;
+    background-color: white;
+}
+
+.arrow-box {
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#matthew-pic-box {
+    /*background-color: hotpink;*/
+}
+
 
