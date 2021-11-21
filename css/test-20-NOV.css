@@ -137,7 +137,20 @@ h2 {
 }
 
 #matthew-pic-box {
-    /*background-color: hotpink;*/
+    background-image: url("/img/matthew-start.jpeg");
+    /*background-repeat: no-repeat;*/
 }
 
+#jump-button-container {
+    /*border: 0.5px solid black;*/
+}
+
+#jump-paragraph {
+    margin-top: .5em;
+    padding: .25em;
+    font-size: 1em;
+    /*border: 0.5px solid black;*/
+    color: white;
+    background-color: black;
+}
 

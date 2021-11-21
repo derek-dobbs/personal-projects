@@ -92,6 +92,48 @@ $(document).ready(function() {
         }
     );
 
+    $('#up-arrow-box').mousedown(function() {
+        $('#matthew-pic-box').css('background-image', 'url("/img/matthew-jump.jpeg")');
+    });
+
+    $('#up-arrow-box').mouseup(function() {
+        $('#matthew-pic-box').css('background-image', 'url("/img/matthew-start.jpeg")');
+    });
+
+    $('#left-arrow-box').mousedown(function() {
+        $('#matthew-pic-box').css('background-image', 'url("/img/matthew-right.jpeg")');
+    });
+
+    $('#left-arrow-box').mouseup(function() {
+        $('#matthew-pic-box').css('background-image', 'url("/img/matthew-start.jpeg")');
+    });
+
+    $('#down-arrow-box').mousedown(function() {
+        $('#matthew-pic-box').css('background-image', 'url("/img/matthew-down.jpeg")');
+    });
+
+    $('#down-arrow-box').mouseup(function() {
+        $('#matthew-pic-box').css('background-image', 'url("/img/matthew-start.jpeg")');
+    });
+
+    $('#right-arrow-box').mousedown(function() {
+        $('#matthew-pic-box').css('background-image', 'url("/img/matthew-left.jpeg")');
+    });
+
+    $('#right-arrow-box').mouseup(function() {
+        $('#matthew-pic-box').css('background-image', 'url("/img/matthew-start.jpeg")');
+    });
+
+    $('#turn-around-box').mousedown(function() {
+        $('#matthew-pic-box').css('background-image', 'url("/img/matthew-rear.jpeg")');
+    });
+
+    $('#turn-around-box').mouseup(function() {
+        $('#matthew-pic-box').css('background-image', 'url("/img/matthew-start.jpeg")');
+    });
+
+
+
 
 
 
