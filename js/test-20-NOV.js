@@ -34,21 +34,63 @@ $(document).ready(function() {
         $('#dialouge-paragraph').html("Hello, I'm Julie!");
     });
 
-    $('#hover-box-1').click(function() {
-        $(this).css('background-color', 'red');
-    });
+    // $('#hover-box-1').hover(function() {
+    //     $(this).css('background-color', 'red');
+    // });
 
-    $('#hover-box-2').click(function() {
-        $(this).css('background-color', 'blue');
-    });
+    // $('#hover-box-2').hover(function() {
+    //     $(this).css('background-color', 'blue');
+    // });
+    //
+    // $('#hover-box-3').hover(function() {
+    //     $(this).css('background-color', 'green');
+    // });
+    //
+    // $('#hover-box-4').hover(function() {
+    //     $(this).css('background-color', 'yellow');
+    // });
 
-    $('#hover-box-3').click(function() {
-        $(this).css('background-color', 'green');
-    });
+    $('#hover-box-1').hover(
+        function() {
+            $(this).css('background-color', 'red');
+        },
+        function() {
+            $(this).css('background-color', 'white');
+        }
+    );
 
-    $('#hover-box-4').click(function() {
-        $(this).css('background-color', 'yellow');
-    });
+    $('#hover-box-2').hover(
+        function() {
+            $(this).css('background-color', 'blue');
+        },
+        function() {
+            $(this).css('background-color', 'white');
+        }
+    );
+
+    $('#hover-box-3').hover(
+        function() {
+            $(this).css('background-color', 'green');
+        },
+        function() {
+            $(this).css('background-color', 'white');
+        }
+    );
+
+    $('#hover-box-4').hover(
+        function() {
+            $(this).css('background-color', 'yellow');
+        },
+        function() {
+            $(this).css('background-color', 'white');
+        }
+    );
+
+    $('#color-click-reset').click(
+        function () {
+            $('.box-paragraph-click').css('background-color', 'white');
+        }
+    );
 
 
 
