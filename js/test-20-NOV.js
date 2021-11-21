@@ -132,6 +132,85 @@ $(document).ready(function() {
         $('#matthew-pic-box').css('background-image', 'url("/img/matthew-start.jpeg")');
     });
 
+    $(document).keydown(function(event){
+        // alert("Keycode " + event.keyCode + " was pressed.");
+        let keyboardInput = event.keyCode;
+
+        switch(keyboardInput) {
+            case 38:
+                // console.log("The up arrow was pressed.");
+                $('#matthew-pic-box').css('background-image', 'url("/img/matthew-jump.jpeg")');
+                break;
+            case 39:
+                // console.log("The right arrow was pressed.");
+                $('#matthew-pic-box').css('background-image', 'url("/img/matthew-left.jpeg")');
+                break;
+            case 40:
+                // console.log("The down arrow was pressed.");
+                $('#matthew-pic-box').css('background-image', 'url("/img/matthew-down.jpeg")');
+                break;
+            case 37:
+                // console.log("The left arrow was pressed.");
+                $('#matthew-pic-box').css('background-image', 'url("/img/matthew-right.jpeg")');
+                break;
+            case 32:
+                // console.log("The space bar was pressed.");
+                $('#matthew-pic-box').css('background-image', 'url("/img/matthew-rear.jpeg")');
+                break;
+        }
+    });
+
+    $(document).keyup(function(event) {
+        // alert("Keycode " + event.keyCode + " was pressed.");
+        let keyboardInput = event.keyCode;
+
+        switch(keyboardInput) {
+            case 38:
+                // console.log("The up arrow was pressed.");
+                $('#matthew-pic-box').css('background-image', 'url("/img/matthew-start.jpeg")');
+                break;
+            case 39:
+                // console.log("The right arrow was pressed.");
+                $('#matthew-pic-box').css('background-image', 'url("/img/matthew-start.jpeg")');
+                break;
+            case 40:
+                // console.log("The down arrow was pressed.");
+                $('#matthew-pic-box').css('background-image', 'url("/img/matthew-start.jpeg")');
+                break;
+            case 37:
+                // console.log("The left arrow was pressed.");
+                $('#matthew-pic-box').css('background-image', 'url("/img/matthew-start.jpeg")');
+                break;
+            case 32:
+                // console.log("The space bar was pressed.");
+                $('#matthew-pic-box').css('background-image', 'url("/img/matthew-start.jpeg")');
+                break;
+        }
+    });
+
+    // $('.matthew-container').mouseenter().css('background-color', 'hotpink');
+    // $('.matthew-container').mouseleave().css('background-color', 'white');
+
+    $('.matthew-container').hover(
+        function() {
+            $(this).css('background-color', '#3cf130');
+            console.log("Entered Matthew container");
+        },
+        function() {
+            $(this).css('background-color', 'white');
+            console.log("Left Matthew container");
+        }
+    );
+
+
+    /*
+    up: 38
+    right: 39
+    down: 40
+    left: 37
+    spacebar: 32
+    */
+
 
 
 
