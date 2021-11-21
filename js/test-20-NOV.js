@@ -34,6 +34,22 @@ $(document).ready(function() {
         $('#dialouge-paragraph').html("Hello, I'm Julie!");
     });
 
+    $('#hover-box-1').click(function() {
+        $(this).css('background-color', 'red');
+    });
+
+    $('#hover-box-2').click(function() {
+        $(this).css('background-color', 'blue');
+    });
+
+    $('#hover-box-3').click(function() {
+        $(this).css('background-color', 'green');
+    });
+
+    $('#hover-box-4').click(function() {
+        $(this).css('background-color', 'yellow');
+    });
+
 
 
 

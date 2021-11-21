@@ -2,7 +2,7 @@
 
 body {
     /*color: black;*/
-    /*background-color: hotpink;*/
+    background-color: black;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -17,6 +17,7 @@ body {
     width: 150px;
     border: 2px solid black;
     font-weight: bold;
+    background-color: lightgrey;
 }
 
 .box-paragraph {
@@ -24,7 +25,7 @@ body {
     font-weight: bold;
 }
 
-#main-julie-container {
+.main-julie-container {
     padding-top: 2em;
 }
 
@@ -80,5 +81,14 @@ body {
     margin-left: 1.5em;
     /*padding: 1em;*/
 
+}
+
+.matthew-container {
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    margin-left: 475px;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
