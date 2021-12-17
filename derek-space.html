@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/css/derek-space.css">
   </head>
   <body>
-    <main style="background-color: white" class="container-fluid">
+    <main class="container-fluid">
       <header>
         <h1 style="background-color:black;color: greenyellow;text-align: center;padding-top: 1em;padding-bottom: 1em;">Welcome to DerekSpace!</h1>
       </header>
@@ -27,6 +27,9 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Weather</a>
@@ -69,6 +72,33 @@
         </div>
       </nav>
       <br>
+      <section id="blog-container" style="background-color: black; color: yellowgreen">
+        <p class="h2" style="text-align: center">Blog</p>
+        <br>
+        <a style="color: white;margin-bottom: 1em" href=""><i class="far fa-plus-square"></i> Add blog post</a>
+        <br><br>
+        <div class="container-fluid">
+          <label for="title-input">Enter the title: </label>
+          <br>
+          <input id="title-input" type="text">
+          <br>
+          <label for="category-input">Enter the category: </label>
+          <br>
+          <input id="category-input" type="text">
+          <br>
+          <label for="text-area-input">Type your post in the area below: </label>
+          <br>
+          <textarea name="" id="text-area-input" cols="30" rows="10"></textarea>
+          <br>
+          <button id="submit-post" type="button">Submit Post</button>
+          <br><br>
+
+          
+        </div>
+        <div id="blog-posts-display">
+          <!--Contents of blog will show here-->
+        </div>
+      </section>
       <section id="weather-container" style="background-color: #4040a1; color: white" class="container-fluid">
         <p class="h3">Weather for City, State <a style="font-size: .5em; color: white" href="">change location</a></p>
       </section>
